@@ -1,0 +1,21 @@
+__Problem 1: Combining scatterplot coordinates with further styling of the markers using size or color variation can provide additional information about the points. In this plot, the y position should correspond with the size of markers. Do you think this is a useful way to emphasize information in a plot? Could it possibly be misinterpreted or misleading in some way? Did your peer create plot as instructed, and did they use the same method as you?___
+
+Using size or color variation to show additional information could be very usuful, but for our example, the size variation doesn't really add any additional information. Therefore, it maybe misleading because the size of the markers could represent another variable. Vjjan-91's plot was constructed as instructed. We used different methods; vjjan-91 used Toyplot and I used Bokeh. Bokeh shows a slightly fancier plot, which has grids and tick marks, but the plot itself is quite similar.
+
+
+__Problem 2: Here points are also colored using a colormap mapping to the x value of the points, and the size is random. There is not likely to be a good reason to make the size of points random in a real plot, but it does make for an interesting looking figure here. Think of and describe an example scatterplot in which there are 4 values you wish to represent, and you would use size, color, and x, and y coordinates to display information about all four.__
+
+4 values can be used to present a hypothesis of downstream sequential diversification of riverine cichlid fish. x could indicate morphometric differences from an origin species, y could show physical distance away from the upstream site where the origin species is found. Color could indicate salinity change and size variation could show change in elevation.
+
+
+__Problem 3: Modifying the placement of tick marks and axes labels is often a difficult task, and is done a bit differently in every plotting library. It is important that ticks marks are spaced out and made to an appropriate size to be readable. Did your peer add tick marks as described? Did they use a different method than you did?__
+
+Seven equally spaced tick marks on the x-axis were shown in vjjan-91's plot. Y-axis was supposed to be hidden, but it was shown on the plot. The argument `yshow=False` could add to the nested property `canvas.cartesian`. y = N values instead of x + N values were drawn from a normal distribution. We both used Toyplot. The way vjjan-91 created tick marks were different (i.g. ticks = 10*(i-3) for i in range(7)).
+
+__Problem 4: Barplots are used to show a distribution of binned data points. The default styling of barplots is often used, but modifying the size of bins, their color, or the spacing between them can often make for a much nicer looking plot. Did your peer bin the data into 15 bins? Did they apply a colormap to the bars? Given this distribution, which type of colormap do you think would be most appropriate, i.e., a linear map, a diverging map?__
+
+The data was binned into 15 bins, and a colormap was applied to the bars. A diverging map is more appropriate in this case, because the color intensity is in line with the frequency of the dataset. A linear map really does not make sense in this normally distributed histogram.
+
+__Problem 5: Creating plot layouts that combine multiple plots onto a single canvas is an important skill to learn to begin to make complex plots that display a lot of information. This plot should show a histogram on the left, and a corresponding scatterplot on the right. The density of points should match up between the two. Which of the two plots do you think is more informative about the distribution of the data? Did your peer use a different method than you did, and how do they differ?__
+
+The histogram is more informative because it summarizes the frequency of the dataset. Though the scatter plot shows raw data of how data points are distributed. It is therefore informative in some way depending on what we want to present.  We used very similar methods, but vjjan-91 assigned colors to the histogram differently (i.g used; -hist[0], colormap). I color-coded the histogram and scatterplot as the intensity of hue matches the frequency of the dataset.
